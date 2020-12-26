@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chartset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="generator" content="WebSharper" />
+    <meta ws-replace="meta" />
+    <style ws-replace="styles"></style>
+    <title>Twitter Simulator</title>
+    <style>
+        h1 {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 30px;
+        }
+
+            ul > li + li {
+                border-top: 1px dotted lightgray;
+            }
+
+        label {
+            width: 100%;
+            font-weight: bold !important;
+        }
+
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%">
+        <h1>Twitter Simulator</h1>
+        <div style="color:#0000FF">
+            <h4>Please type in the text box with the following format.</h4>
+            <p>Command Format:</p>
+            <p>register,[username],[password]</p>
+            <p>login,[username],[password]</p>
+            <p>logout</p>
+            <p>subscribe,[username]</p>
+            <p>send,[content of tweet]</p>
+            <p>retweet,[content of tweet]</p>
+            <p>query,tag,[tag of tweet]</p>
+            <p>query,mentioned,[mentioned of tweet]</p>
+            <p>query,username,[the user who sent tweet]</p>
+        </div>
+        <div ws-hole="Main" ws-children-template="Body">
+            <div ws-replace="WebSocketTest"></div>
+        </div>
+    </div>
+    <script ws-replace="scripts"></script>
+</body>
+</html>
