@@ -15,7 +15,7 @@ Implement a Twitter Clone and a client tester/simulator.
 2.	Simulate periods of live connection and disconnection for users  
 3.	Simulate a Zipf distribution on the number of subscribers. For accounts with a lot of subscribers, increase the number of tweets. Make some of these messages re-tweets  
 #### •	Other considerations:  
-  	The client part (send/receive tweets) and the engine (distribute tweets) have to be in separate processes.  
+The client part (send/receive tweets) and the engine (distribute tweets) have to be in separate processes.  
 ### •	 Part 2 (Project 4-2)  
 Use WebSharper web framework to implement a WebSocket interface to your part I implementation. That means that, even though the F#  implementation (Part I) you could use AKKA messaging to allow client-server implementation, you now need to design and use a proper WebSocket interface. Specifically:  
 1.	You need to design a JSON based API that  represents all messages and their replies (including errors).  
