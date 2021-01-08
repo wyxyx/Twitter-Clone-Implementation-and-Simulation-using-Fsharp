@@ -1,7 +1,7 @@
 # Twitter-Clone-Implementation-and-Simulation-using-Fsharp
 Implemented both web-based and websocket-based API for Twitter
 
-### Part 1 (Project 4-1)
+### •	 Part 1 (Project 4-1)
 Implement a Twitter Clone and a client tester/simulator.  
 #### •	 Implement a Twitter like engine with the following functionality:  
   o	Register account  
@@ -18,3 +18,8 @@ Implement a Twitter Clone and a client tester/simulator.
   o	The client part (send/receive tweets) and the engine (distribute tweets) have to be in separate processes. Preferably, you use multiple independent client processes that     simulate thousands of clients and a single engine process  
   o	You need to measure various aspects of your simulator and report performance  
   o	More detail in lecture as the project progresses. 
+### •	 Part 2 (Project 4-2)  
+Use WebSharper web framework to implement a WebSocket interface to your part I implementation. That means that, even though the F#  implementation (Part I) you could use AKKA messaging to allow client-server implementation, you now need to design and use a proper WebSocket interface. Specifically:  
+  1.	You need to design a JSON based API that  represents all messages and their replies (including errors).  
+  2.	You need to re-write parts of your engine using WebSharper to implement the WebSocket interface.  
+  3.	You need to re-write parts of your client to use WebSockets.  
