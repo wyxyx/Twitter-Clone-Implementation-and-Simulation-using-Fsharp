@@ -20,6 +20,6 @@ Implement a Twitter Clone and a client tester/simulator.
   o	More detail in lecture as the project progresses. 
 ### •	 Part 2 (Project 4-2)  
 Use WebSharper web framework to implement a WebSocket interface to your part I implementation. That means that, even though the F#  implementation (Part I) you could use AKKA messaging to allow client-server implementation, you now need to design and use a proper WebSocket interface. Specifically:  
-  1.	You need to design a JSON based API that  represents all messages and their replies (including errors).  
-  2.	You need to re-write parts of your engine using WebSharper to implement the WebSocket interface.  
-  3.	You need to re-write parts of your client to use WebSockets.  
+1.	You need to design a JSON based API that  represents all messages and their replies (including errors).  
+2.	You need to re-write parts of your engine using WebSharper to implement the WebSocket interface.  
+3.	You need to re-write parts of your client to use WebSockets.  
